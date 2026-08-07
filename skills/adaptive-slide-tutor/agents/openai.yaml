@@ -1,4 +1,4 @@
 interface:
   display_name: "Adaptive Slide Tutor"
-  short_description: "Concise adaptive tutoring for slide-based study"
-  default_prompt: "Use $adaptive-slide-tutor to teach me this slide deck interactively and track my understanding."
+  short_description: "Adaptive-depth tutoring for slide-based study"
+  default_prompt: "Use $adaptive-slide-tutor to explain this slide section in detail, then guide my focused follow-up questions."
