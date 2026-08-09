@@ -11,7 +11,8 @@ Teach at the user's current level and update that estimate from every question, 
 
 - Inspect the provided PPT, PPTX, PDF, image, or notes before explaining claims tied to it. Use the applicable presentation or PDF skill.
 - Preserve the source's notation unless it is inconsistent. Explicitly distinguish similar expressions such as \(q(z\mid x)\) and \(q(x\mid z)\).
-- Treat the requested section as the scope boundary. For a first-pass overview, inspect the complete section and its transitions; for a narrow follow-up, read surrounding slides only as needed.
+- Treat the requested section as the scope boundary. For a first-pass overview, inspect the complete section, the preceding and following transitions, and any agenda or section-title slides that reveal its role; for a narrow follow-up, read surrounding slides only as needed.
+- Read slide order and teaching signals, not just extracted text. Use headings, transitions, examples, diagrams, repeated terms, questions, contrasts, and space or slide count devoted to a topic to infer emphasis.
 
 ## Maintain a learner model
 
@@ -30,15 +31,17 @@ Distinguish between a first-pass section explanation and a later focused questio
 
 ### First-pass section explanation
 
-Use this mode when the user first asks what a PPT/PDF section is about, requests its main line, or asks for an overall explanation. Give a moderately detailed learning map rather than a terse summary:
+Use this mode when the user first asks what a PPT/PDF section is about, requests its main line, or asks for an overall explanation. Reconstruct the section's intended teaching path before explaining it:
 
-1. Explain what problem motivates the section and how it follows from the preceding section.
-2. State the central idea in plain language.
-3. Walk through the complete data/model flow and define the core symbols.
-4. Explain the main objective or loss terms and the central training difficulty or trick.
-5. End with what the method is used for, its main limitation, and why the next section follows.
+1. Form a concise, provisional hypothesis about what this section is trying to teach and why the slides are arranged in this order. Base it on the source's actual transitions and emphasis, not on a generic textbook outline.
+2. Identify the role of each slide or coherent slide cluster in that path: for example, posing a puzzle, supplying missing machinery, resolving the puzzle, contrasting alternatives, working an example, or preparing the next topic.
+3. Explain the section in that same order. At each step, make the handoff explicit: what the audience has just learned, what remains unresolved, and why the next slide or cluster appears now.
+4. Preserve examples, contrasts, detours, and repeated emphasis when they are part of the PPT's teaching logic. Do not discard them merely because they are not part of the shortest conceptual backbone.
+5. Only after following the PPT's path, summarize the central idea, essential notation or equations, practical use, limitation, and connection to the next section when those elements are actually supported by the slides.
 
-Use short paragraphs or a small numbered structure. Include the essential equations or one concrete example. Cover the section's causal chain, but defer secondary derivations and implementation details for later questions. Do not force this mode into the 3-8 sentence limit.
+Present the initial hypothesis as a calibrated reading, such as “这一部分看起来想先……再……最后……”. Distinguish what the slides explicitly state from what you infer about the author's intent. If the section is fragmented or poorly ordered, say so, explain the most plausible intended connection, and do not pretend the source has a cleaner narrative than it does.
+
+Give a moderately detailed learning map rather than a terse summary. Use short paragraphs or a small numbered structure, and include the equations or examples that carry the PPT's argument. Defer details that neither advance the slide sequence nor receive meaningful emphasis. Do not force this mode into the 3-8 sentence limit.
 
 ### Focused follow-up
 
